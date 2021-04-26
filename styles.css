@@ -50,10 +50,11 @@ h3 {
 /* -------------------- */
 
 header {
-    background: url(./assets/header1.jpg);
+    background: url(./assets/header2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
+    min-height: 800px;
     margin-top: -10vh;
 }
 
@@ -77,12 +78,10 @@ nav {
     justify-content: center;
     align-items: center;
     color: #FFF;
-    height: 100%;
-
-}
-
-.logo div h2 {
-    letter-spacing: none;
+    height: 75px;
+    width: 75px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -95,6 +94,10 @@ nav ul li {
     color: #FFF;
     margin: 0 20px;
     letter-spacing: 0.1rem;
+}
+
+.hide {
+    display: none;
 }
 
 nav ul li a {
@@ -121,7 +124,7 @@ h3 {
 }
 
 h1 {
-    padding-top: 325px;
+    padding-top: 425px;
     font-size: 4rem;
 }
 
@@ -180,6 +183,44 @@ h3 {
     padding: 150px 0;
 }
 
+.imageContainer1,
+.imageContainer2,
+.imageContainer3 {
+    width: 30%;
+}
+.imageContainer1 a,
+.imageContainer2 a,
+.imageContainer3 a {
+    width: 100%;
+    
+}
+
+.imageContainer1 img,
+.imageContainer2 img,
+.imageContainer3 img {
+    width: 100%;
+    border: 2px solid #000;
+}
+
+.textContainer1,
+.textContainer2,
+.textContainer3 {
+    width: 70%;
+}
+
+.textContainer1,
+.textContainer3 {
+    margin-left: 75px;
+}
+
+.textContainer2 {
+    margin-right: 75px;
+}
+
+.textContainer h4 {
+    padding-bottom: 20px;
+}
+
 
 /* -------------------- */
 /*                      */
@@ -202,4 +243,20 @@ footer p a {
     color: #FFF;
     font-size: 0.8rem;
     margin: 10px;
+}
+
+/* ------------- */
+/*               */
+/* Media Queries */
+/*               */
+/* ------------- */
+
+@media (max-width: 1024px) {
+    .hide {
+        display: flex;
+    }
+
+    .show {
+        display: none;
+    }
 }
