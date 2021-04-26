@@ -151,6 +151,10 @@ h3 {
     padding: 125px 0;
 }
 
+.aboutTextContainer {
+    display: flex;
+}
+
 .innerWrapper {
     max-width: 800px;
     width: 60%;
