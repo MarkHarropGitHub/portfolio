@@ -50,18 +50,24 @@ h3 {
 /* -------------------- */
 
 header {
-    background: #CCC;
+    background: url(./assets/header1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
+    margin-top: -10vh;
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     background: #000;
     opacity: 0.6;
+    width: 100%;
 }
 .nav {
     display: flex;
     justify-content: space-between;
-    
     text-transform: uppercase;
     height: 10vh;
 }
@@ -108,7 +114,14 @@ nav ul li a:hover {
     align-items: center;
 }
 
+h1,
+h3 {
+    color: #FFF;
+    text-shadow: 5px 5px 5px #000;
+}
+
 h1 {
+    padding-top: 325px;
     font-size: 4rem;
 }
 
@@ -132,6 +145,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 125px 0;
 }
 
 .innerWrapper {
@@ -140,11 +154,31 @@ h3 {
     margin: 0 auto;
 }
 
+.aboutImageContainer {
+    width: 30%;
+}
+
+.aboutTextContainer {
+    width: 70%;
+}
+
 /* -------------------- */
 /*                      */
 /*    Project Styling   */
 /*                      */
 /* -------------------- */
+
+.project1,
+.project3 {
+    background: #CCC;
+}
+
+.proj1,
+.proj2,
+.proj3 {
+    display: flex;
+    padding: 150px 0;
+}
 
 
 /* -------------------- */
