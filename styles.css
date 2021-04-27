@@ -42,6 +42,18 @@ h3 {
     text-align: center;
 }
 
+h1,
+h3,
+.logo,
+nav ul li,
+nav ul li a,
+footer,
+footer p,
+footer li a,
+footer li a i  {
+    color: #FFF;
+}
+
 
 /* -------------------- */
 /*                      */
@@ -77,7 +89,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFF;
     position: relative;
     top: 8px;
     height: 75px;
@@ -93,7 +104,6 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    color: #FFF;
     margin: 0 20px;
     letter-spacing: 0.1rem;
 }
@@ -103,7 +113,6 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFF;
     text-decoration: none;
    
 }
@@ -123,7 +132,6 @@ nav ul li a:focus {
 
 h1,
 h3 {
-    color: #FFF;
     text-shadow: 5px 5px 5px #000;
     text-align: center;
     justify-content: center;
@@ -134,6 +142,7 @@ h1 {
     font-size: 4rem;
     width: 100%;
     word-wrap: break-word;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -153,7 +162,6 @@ h3 {
 
 .about {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 125px 0;
@@ -161,16 +169,28 @@ h3 {
 
 .innerWrapper {
     max-width: 800px;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 }
 
 .aboutImageContainer {
-    width: 30%;
+    width: calc(30% + 40px);
+    height: auto;
+}
+
+.innerCircle {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: url(./assets/header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 
 }
 
 .aboutTextContainer {
     width: 70%;
+    margin-left: 40px;
 }
 
 .aboutTextContainer h4 {
@@ -182,6 +202,19 @@ h3 {
 /*    Project Styling   */
 /*                      */
 /* -------------------- */
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 0.8rem;
+}
 
 .project1,
 .project3 {
@@ -195,28 +228,19 @@ h3 {
     padding: 150px 0;
 }
 
-.imageContainer1,
-.imageContainer2,
-.imageContainer3 {
+.imageContainer {
     width: 30%;
 }
-.imageContainer1 a,
-.imageContainer2 a,
-.imageContainer3 a {
+.imageContainer a {
     width: 100%;
-    
 }
 
-.imageContainer1 img,
-.imageContainer2 img,
-.imageContainer3 img {
+.imageContainer img {
     width: 100%;
     border: 2px solid #000;
 }
 
-.textContainer1,
-.textContainer2,
-.textContainer3 {
+.textContainer {
     width: 70%;
 }
 
@@ -246,7 +270,6 @@ footer {
     justify-content: center;
     align-items: center;
     background: #000;
-    color: #FFF;
     text-transform: uppercase;
     margin: 0 auto;
     padding: 20px;
@@ -254,7 +277,6 @@ footer {
 footer p,
 footer li a,
 footer li a i {
-    color: #FFF;
     font-size: 0.8rem;
     margin: 10px;
 }
@@ -273,11 +295,16 @@ footer li {
 /*               */
 /* ------------- */
 
-@media (max-width: 1024px) {
+/* Media Query for screens up to 1023 */
+
+@media (max-width: 1023px) {
+
+    /* Header Styling */
 
     h1 {
         font-size: 3.5rem;
     }
+
     .hide {
         display: block;
         position: relative;
@@ -313,7 +340,6 @@ footer li {
     .show li {
         font-size: 1rem;
         padding: 5px 0;
-        
     }
 
     .show li a {
@@ -324,12 +350,56 @@ footer li {
     .github {
         display: none;
     }
+
+    /* About Media Styling */
 }
 
+
+/* Media Query for screens up to 767px */
+
 @media (max-width: 767px) {
+
+    /* Header Media Styling at 767px */
+
     header {
         background: url(./assets/header3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    /* About Media Styling at 767px */
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .aboutImageContainer {
+        margin-bottom: 50px;
+    }
+
+    .aboutTextContainer {
+        margin-left: 0;
+    }
+
+    /* Project Section Styling at 767px */
+
+    .proj1,
+    .proj3 {
+        flex-direction: column;
+    }
+
+    .proj2 {
+        flex-direction: column-reverse;
+    }
+
+    .imageContainer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .textContainer {
+        width: 100%;
+        margin: 0;
     }
 }
