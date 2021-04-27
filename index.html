@@ -10,24 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Open+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
+
+    <!--  -->
     <nav>
         <div class="nav wrapper">
             <div class="logo">
                 <h2>MH</h2>
             </div>
-            <ul>
-                <li class="hide"><i class="fas fa-bars"></i></li>
-                <li class="show"><a href="#home">Home</a></li>
-                <li class="show"><a href="#about">About</a></li>
-                <li class="show"><a href="#projects">Projects</a></li>
-                <li class="show"><a href="#contact">Contact</a></li>
-                <li class="show twitter"><a href="https://www.twitter.com/@markusparkus00/"><i class="fab fa-twitter"></i></a></li>
-                <li class="show"><a href="https://github.com/MarkHarropGitHub"><i class="fab fa-github"></i></a></li>
+            <ul class="homeNavUl" id="homeNavUl">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="twitter"><a href="https://www.twitter.com/@markusparkus00/"><i class="fab fa-twitter"></i></a></li>
+                <li class="github"><a href="https://github.com/MarkHarropGitHub"><i class="fab fa-github"></i></a></li>
             </ul>
+            <button class="hide" id="homeHamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
     <header class="home" id="home">
@@ -73,7 +75,7 @@
             <div class="project3">
                 <div class="wrapper proj3">
                     <div class="imageContainer imageContainer3">
-                        <a href="hts://markharrop-natalietso.github.io/mHnT-marvelousMatches/"><img src="./assets/marvelousMatches.png" alt="screenshot of the MARVEL-ous Matches memory card game"></a>
+                        <a href="https://markharrop-natalietso.github.io/mHnT-marvelousMatches/"><img src="./assets/marvelousMatches.png" alt="screenshot of the MARVEL-ous Matches memory card game"></a>
                     </div>
                     <div class="textContainer textContainer3">
                         <h4>MARVEL-ous Matches</h4>
@@ -81,21 +83,19 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
     <footer id="contact">
         <p>Contact</p>
         <p>markusparkus74@gmail.com</p>
         <ul>
-            <li class="linkedIn">
+            <li>
                 <a href="https://www.linkedin.com/in/mark-harrop-7b76bb176/"><i class="fab fa-linkedin-in"></i></a>
             </li>
-            <li class="twitter">
+            <li>
                 <a href="https://www.twitter.com/@markusparkus00/"><i class="fab fa-twitter"></i></a>
             </li>
-            
-            <li class="github">
+            <li>
                 <a href="https://github.com/MarkHarropGitHub"><i class="fab fa-github"></i></a>
             </li>
         </ul>
