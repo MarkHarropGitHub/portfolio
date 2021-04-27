@@ -75,14 +75,13 @@ nav {
     background: #000;
     opacity: 0.6;
     width: 100%;
-    height: 10vh;
     z-index: 30;
 }
 .nav {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    height: 100%;
+    height: 100px;
 }
 
 .logo {
@@ -91,8 +90,8 @@ nav {
     align-items: center;
     position: relative;
     top: 8px;
-    height: 100%;
-    width: auto;
+    height: 75px;
+    width: 75px;
     border: 2px solid #FFF;
     border-radius: 50%;
 }
