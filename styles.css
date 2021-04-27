@@ -142,6 +142,7 @@ h1 {
     font-size: 4rem;
     width: 100%;
     word-wrap: break-word;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -173,8 +174,8 @@ h3 {
 }
 
 .aboutImageContainer {
-    width: 30%;
-    height: 300px;
+    width: calc(30% + 40px);
+    height: auto;
 }
 
 .innerCircle {
@@ -227,28 +228,19 @@ p {
     padding: 150px 0;
 }
 
-.imageContainer1,
-.imageContainer2,
-.imageContainer3 {
+.imageContainer {
     width: 30%;
 }
-.imageContainer1 a,
-.imageContainer2 a,
-.imageContainer3 a {
+.imageContainer a {
     width: 100%;
-    
 }
 
-.imageContainer1 img,
-.imageContainer2 img,
-.imageContainer3 img {
+.imageContainer img {
     width: 100%;
     border: 2px solid #000;
 }
 
-.textContainer1,
-.textContainer2,
-.textContainer3 {
+.textContainer {
     width: 70%;
 }
 
@@ -303,11 +295,16 @@ footer li {
 /*               */
 /* ------------- */
 
-@media (max-width: 1024px) {
+/* Media Query for screens up to 1023 */
+
+@media (max-width: 1023px) {
+
+    /* Header Styling */
 
     h1 {
         font-size: 3.5rem;
     }
+
     .hide {
         display: block;
         position: relative;
@@ -353,12 +350,56 @@ footer li {
     .github {
         display: none;
     }
+
+    /* About Media Styling */
 }
 
+
+/* Media Query for screens up to 767px */
+
 @media (max-width: 767px) {
+
+    /* Header Media Styling at 767px */
+
     header {
         background: url(./assets/header3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    /* About Media Styling at 767px */
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .aboutImageContainer {
+        margin-bottom: 50px;
+    }
+
+    .aboutTextContainer {
+        margin-left: 0;
+    }
+
+    /* Project Section Styling at 767px */
+
+    .proj1,
+    .proj3 {
+        flex-direction: column;
+    }
+
+    .proj2 {
+        flex-direction: column-reverse;
+    }
+
+    .imageContainer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .textContainer {
+        width: 100%;
+        margin: 0;
     }
 }
