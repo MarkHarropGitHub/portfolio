@@ -187,6 +187,11 @@ h3 {
     background-size: cover;
 }
 
+.innerCircle img {
+    width: 100%;
+    height: 100%;
+}
+
 .aboutTextContainer {
     width: 70%;
     margin-left: 40px;
