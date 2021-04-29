@@ -478,6 +478,7 @@ footer p {
         right: 20px;
         top: 90px;
         transition: 1s;
+        z-index: 9999;
     }
 
     .show li {
