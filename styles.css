@@ -64,6 +64,21 @@ footer li a i  {
     background: #F7F7F7;
 }
 
+button {
+    background: #FF5552;
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 0 auto;
+    border: none;
+}
+
+button:hover {
+    background: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+
 /* -------------------- */
 /*                      */
 /*    Header Styling    */
@@ -74,7 +89,7 @@ header {
     background: url(./assets/header2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     min-height: 900px;
     margin-top: -10vh;
 }
@@ -163,6 +178,19 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    margin-bottom: 100px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.arrow p {
+    font-size: 3rem;
+    color: #FFF;
 }
 
 /* ------------------- */
@@ -307,6 +335,7 @@ p {
 
 .textContainer {
     width: 70%;
+
 }
 
 .textContainer1,
@@ -320,6 +349,19 @@ p {
 
 .textContainer h4 {
     padding-bottom: 20px;
+    
+}
+
+.gitHub {
+    font-size: 1rem;
+    background: #FF5552;
+    border: none;
+    margin-top: 20px;
+}
+
+.gitHub a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 /* ------------------- */
@@ -330,6 +372,7 @@ p {
 
 .contactSection {
     padding: 75px 0;
+    margin-top: 75px;
 }
 
 .contact {
@@ -384,16 +427,7 @@ textarea {
     margin-bottom: 30px;
 }
 
-.form button {
-    background: #FF5552;
-    color: #FFF;
-    padding: 5px 10px;
-    font-size: 1rem;
-    margin: 0 auto;
-    border: none;
-}
-
-.form button:hover {
+button:hover {
     background: #000;
     color: #FFF;
     cursor: pointer;
@@ -410,6 +444,7 @@ footer {
     background: #000;
     margin: 0 auto;
     padding: 20px;
+    width: 100%;
 }
 footer p {
     font-size: 0.8rem;
@@ -490,11 +525,6 @@ footer p {
         text-shadow: 3px solid #000;
     }
 
-    .twitter,
-    .github {
-        display: none;
-    }
-
     /* About Media Styling */
 
     .about {
@@ -536,9 +566,18 @@ footer p {
         margin-bottom: 40px;
     }
 
+    .details {
+        padding-top: 75px;
+    }
+
     .details,
     .form {
         width: 100%;
+    }
+
+    .form button {
+        width: 25%;
+        margin: 0 auto;
     }
 }
 
@@ -553,6 +592,12 @@ footer p {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    h1 {
+        padding-top: 200px;
+    }
+
+
 
     /* Project Section Styling at 767px */
 
@@ -573,5 +618,22 @@ footer p {
     .textContainer {
         width: 100%;
         margin: 0;
+    }
+
+    /* Contact Styling */
+
+    .details li {
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .form button {
+        width: 50%;
+    }
+
+    /* Footer Styling */
+
+    footer p {
+        font-size: 0.6rem;
     }
 }
