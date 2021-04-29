@@ -17,12 +17,10 @@ window.onclick = function(event) {
         let openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
-        } else {        
-            openDropdown.classList.add('show');
-        }
+        } 
       }
     }
-  }
+}
 
 // Debounce function to limit scroll responses on scrolling
 
