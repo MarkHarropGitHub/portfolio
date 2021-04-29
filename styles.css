@@ -42,6 +42,10 @@ h3 {
     text-align: center;
 }
 
+span {
+    color: #FF5552;
+}
+
 h1,
 h3,
 .logo,
@@ -55,8 +59,9 @@ footer li a i  {
 }
 
 .skillsSection,
-.project2 {
-    background: #CCC;
+.project2,
+.contactSection {
+    background: #F7F7F7;
 }
 
 /* -------------------- */
@@ -125,7 +130,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #FF0000;
+    color: #FF5552;
 }
 
 .flex {
@@ -317,6 +322,79 @@ p {
     padding-bottom: 20px;
 }
 
+/* ------------------- */
+/*                     */
+/*   Contact Styling   */
+/*                     */
+/* ------------------- */
+
+.contactSection {
+    padding: 75px 0;
+}
+
+.contact {
+    display: flex;
+}
+
+.details {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.details h4 {
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    display: flex;
+}
+
+.contact li {
+    list-style: none;
+    margin: 20px 40px 0 0;
+}
+
+.contact li a i {
+    color: #000;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input,
+textarea {
+    border: 2px solid #000;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.form button {
+    background: #FF5552;
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 0 auto;
+    border: none;
+}
+
+.form button:hover {
+    background: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+
 /* -------------------- */
 /*                      */
 /*    Footer Styling    */
@@ -324,29 +402,17 @@ p {
 /* -------------------- */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background: #000;
-    text-transform: uppercase;
     margin: 0 auto;
     padding: 20px;
 }
-footer p,
-footer li a,
-footer li a i {
+footer p {
     font-size: 0.8rem;
-    margin: 10px;
+    text-transform: uppercase;
+    width: 100%;
 }
 
-footer ul {
-    display: flex;
-}
-
-footer li {
-    list-style: none;
-}
 
 /* ------------- */
 /*               */
@@ -391,7 +457,7 @@ footer li {
     }
 
     .homeHamburger:hover {
-        color: #FF0000;
+        color: #FF5552;
     }
 
     .homeNavUl {
@@ -453,6 +519,21 @@ footer li {
 
     h6 {
         font-size: 1rem;
+    }
+
+    /* Contact Styling */
+
+    .contact {
+        flex-direction: column;
+    }
+
+    ul {
+        margin-bottom: 40px;
+    }
+
+    .details,
+    .form {
+        width: 100%;
     }
 }
 
