@@ -380,6 +380,10 @@ textarea {
     resize: none;
 }
 
+.recaptcha {
+    margin-bottom: 30px;
+}
+
 .form button {
     background: #FF5552;
     color: #FFF;
