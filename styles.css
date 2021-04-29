@@ -113,7 +113,7 @@ nav ul li {
     letter-spacing: 0.1rem;
 }
 
-.hide,
+.homeHamburger,
 .close {
     display: none;
 }
@@ -278,12 +278,12 @@ p {
     padding: 150px 0;
 }
 
-.slide {
+.fadeIn {
     opacity: 1;
     transition: all 0.5s;
 }
 
-.slide.active {
+.fadeIn.active {
     opacity: 0;
 }
 
@@ -364,7 +364,7 @@ footer li {
         font-size: 3.5rem;
     }
 
-    .hide {
+    .homeHamburger {
         display: block;
         position: relative;
         right: 40px;
@@ -376,17 +376,21 @@ footer li {
         justify-content: center;
     }
 
+    i {
+        width: 100%;
+    }
+
     .close {
         display: none;
 
     }
 
-    .hide:hover,
-    .hide:focus {
+    .homeHamburger:hover,
+    .homeHamburger:focus {
         cursor: pointer
     }
 
-    .hide:hover {
+    .homeHamburger:hover {
         color: #FF0000;
     }
 

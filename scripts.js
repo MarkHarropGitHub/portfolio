@@ -7,6 +7,25 @@ homeHamburger.addEventListener('click', () => {
     homeNavUl.classList.toggle('show');
 })
 
+// Close dropdown on menu-item click
+
+window.onclick = function(event) {
+    if (!event.target.matches('.homeHamburger')) {
+      const dropdowns = document.getElementsByClassName("homeNavUl");
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        } else {        
+            openDropdown.classList.add('show');
+        }
+      }
+    }
+  }
+
+// Debounce function to limit scroll responses on scrolling
+
 function debounce(func, wait = 20, immediate = true) {
     let timeout;
     return function() {
@@ -23,7 +42,7 @@ function debounce(func, wait = 20, immediate = true) {
 };
 
 
-const slideImages = document.querySelectorAll('.slide');
+const slideImages = document.querySelectorAll('.fadeIn');
 
 const sliderFunction = (e) => {
     slideImages.forEach(slideImage => {
