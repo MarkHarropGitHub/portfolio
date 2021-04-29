@@ -13,34 +13,50 @@
 </head>
 <body>
 
-    <!-- Nav  -->
+    <!-- Nav Section Begins -->
+
     <nav>
         <div class="nav wrapper">
             <div class="logo">
                 <h2>MH</h2>
             </div>
             <ul class="homeNavUl" id="homeNavUl">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="test"><a href="#home">Home</a></li>
+                <li class="test"><a href="#about">About</a></li>
+                <li class="test"><a href="#skills">Skills</a></li>
+                <li class="test"><a href="#projects">Projects</a></li>
+                <li class="test"><a href="#contact">Contact</a></li>
                 <li class="twitter"><a href="https://www.twitter.com/@markusparkus00/"><i class="fab fa-twitter"></i></a></li>
                 <li class="github"><a href="https://github.com/MarkHarropGitHub"><i class="fab fa-github"></i></a></li>
             </ul>
             <button class="hide" id="homeHamburger">
                 <i class="fas fa-bars"></i>
             </button>
+
         </div>
     </nav>
+
+    <!-- Nav Section Ends -->
+
+    <!-- Header Section Begins -->
+
     <header class="home" id="home">
         <div class="flex">
             <h1>Mark Harrop</h1>
             <h3>Front-End Developer</h3>
         </div>
     </header>
+
+    <!-- Header Section Ends -->
+
+    <!-- Main Section Begins -->
+
     <main>
+
+        <!-- About Section Begins -->
+
         <section id="about">
-            <div class="about innerWrapper">
+            <div class="about">
                 <div class="aboutImageContainer">
                     <div class="innerCircle">
                         <img src="./assets/selfPortrait.jpeg" alt="self portrait of Mark Harrop, website owner">
@@ -48,16 +64,71 @@
                 </div>
                 <div class="aboutTextContainer">
                     <h4>Who I am</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita eos voluptatem accusantium maiores, possimus eveniet obcaecati porro. Est cumque officiis, eum, beatae labore reiciendis dolores maxime assumenda earum voluptate dolorem adipisci maiores! Sed repudiandae, omnis assumenda deleniti consectetur sunt est quaerat sit. Odio dignissimos quidem quae expedita error dolorem.</p>
+                    <p>Hi, I'm Mark. I'm a front-end web developer based out of Toronto, and have developed a passion for web development and learning new programming languages. After working for years in the automotive coatings industry, I have launched a new career as a developer, graduating from the Juno College Immersive Bootcamp.  </p>
                 </div>
             </div>
-            
         </section>
+
+        <!-- About Section Ends -->
+
+        <section class="skillsSection" id="skills">
+            <div class="skillHeader">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills innerWrapper">
+                <div class="skillLogo">
+                    <img src="./assets/HTML5_logo_black.svg.png" alt="HTML5 logo">
+                    <h6>HTML5</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/CSS3.png" alt="CSS3 logo">
+                    <h6>CSS3</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/Javascript.png" alt="Javascript logo">
+                    <h6>Javascript</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/SASS.png" alt="SASS logo">
+                    <h6>SASS</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/Accessibility.png" alt="accessibility logo">
+                    <h6>Accessibility</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/jquery-1-logo.png" alt="jQuery logo">
+                    <h6>jQuery</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/Git.png" alt="Git logo">
+                    <h6>Git/GitHub</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/firebase.png" alt="Firebase logo">
+                    <h6>Firebase</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/responsive-web-design-png.png" alt="responsive web design">
+                    <h6>Responsive Design</h6>
+                </div>
+                <div class="skillLogo">
+                    <img src="./assets/API.png" alt="API logo">
+                    <h6>REST APIs</h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section Begins -->
+
         <section class="projects" id="projects">
             <div class="project1">
+                <div class="projectsHeader">
+                    <h2>Projects</h2>
+                </div>
                 <div class="wrapper proj1">
                     <div class="imageContainer imageContainer1">
-                        <a href="https://stupefied-euclid-8590ce.netlify.app/"><img src="./assets/quarantinePursuit.png" alt="screenshot of Quarantine Pursuit Trivia Game"></a>
+                        <a href="https://stupefied-euclid-8590ce.netlify.app/"><img src="./assets/quarantinePursuit.png" class="alignLeft slide" alt="screenshot of Quarantine Pursuit Trivia Game"></a>
                     </div>
                     <div class="textContainer textContainer1">
                         <h4>Quarantine Pursuit</h4>
@@ -73,15 +144,15 @@
                         <h5>React/Firebase/Pair-Programming</h5>
                         <p>The COVID Confidential App allows users to communicate their feelings about how the COVID pandemic has affected them.  The users responses are store in Firebase and displayed in the app in reverse chronological order.</p>
                     </div>
-                    <div class="imageContainer imageContainer2">
-                        <a href="https://wizardly-bose-6f90e8.netlify.app"><img src="./assets/covidConfidential.png" alt="screenshot of COVID Confidential app"></a>
+                    <div class="imageContainer imageContainer2 alignRight">
+                        <a href="https://wizardly-bose-6f90e8.netlify.app"><img src="./assets/covidConfidential.png" class="alignRight slide" alt="screenshot of COVID Confidential app"></a>
                     </div>
                 </div>
             </div>
             <div class="project3">
                 <div class="wrapper proj3">
-                    <div class="imageContainer imageContainer3">
-                        <a href="https://markharrop-natalietso.github.io/mHnT-marvelousMatches/"><img src="./assets/marvelousMatches.png" alt="screenshot of the MARVEL-ous Matches memory card game"></a>
+                    <div class="imageContainer imageContainer3 alignLeft ">
+                        <a href="https://markharrop-natalietso.github.io/mHnT-marvelousMatches/"><img src="./assets/marvelousMatches.png" class="alignLeft slide" alt="screenshot of the MARVEL-ous Matches memory card game"></a>
                     </div>
                     <div class="textContainer textContainer3">
                         <h4>MARVEL-ous Matches</h4>
@@ -91,7 +162,15 @@
                 </div>
             </div>
         </section>
+
+        <!-- Project Section Ends -->
+
     </main>
+
+    <!-- Main Section Ends -->
+
+    <!-- Footer Begins -->
+
     <footer id="contact">
         <p>Contact</p>
         <p>markusparkus74@gmail.com</p>
@@ -107,6 +186,8 @@
             </li>
         </ul>
     </footer>
+
+    <!-- Footer Ends -->
 
     <script src="https://kit.fontawesome.com/cff79ad442.js" crossorigin="anonymous"></script>
     <script src="./scripts.js"></script>
