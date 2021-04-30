@@ -7,7 +7,7 @@ homeHamburger.addEventListener('click', () => {
     homeNavUl.classList.toggle('show');
 })
 
-// Close dropdown on menu-item click
+// Close dropdown on menu-item click and window click
 
 window.onclick = function(event) {
     if (!event.target.matches('.homeHamburger')) {
