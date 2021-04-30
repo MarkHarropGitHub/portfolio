@@ -594,10 +594,12 @@ footer p {
     }
 
     h1 {
-        padding-top: 200px;
+        padding-top: 150px;
     }
 
-
+    h3 {
+        margin-bottom: 20px;
+    }
 
     /* Project Section Styling at 767px */
 
