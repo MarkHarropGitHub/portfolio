@@ -297,8 +297,8 @@ h5 {
     padding-bottom: 20px;
 }
 
-p {
-    font-size: 0.8rem;
+.projects p {
+    font-size: 1.3rem;
 }
 
 .proj1,
@@ -318,7 +318,7 @@ p {
 }
 
 .imageContainer {
-    width: 30%;
+    width: 40%;
 }
 
 .imageContainer a {
@@ -331,7 +331,7 @@ p {
 }
 
 .textContainer {
-    width: 70%;
+    width: 60%;
 
 }
 
@@ -547,6 +547,27 @@ footer p {
         font-size: 1rem;
     }
 
+    /* Project Section Styling at 767px */
+
+    .proj1,
+    .proj3 {
+        flex-direction: column;
+    }
+
+    .proj2 {
+        flex-direction: column-reverse;
+    }
+
+    .imageContainer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .textContainer {
+        width: 100%;
+        margin: 0;
+    }
+
     /* Contact Styling */
 
     .contact {
@@ -590,27 +611,6 @@ footer p {
 
     h3 {
         margin-bottom: 20px;
-    }
-
-    /* Project Section Styling at 767px */
-
-    .proj1,
-    .proj3 {
-        flex-direction: column;
-    }
-
-    .proj2 {
-        flex-direction: column-reverse;
-    }
-
-    .imageContainer {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .textContainer {
-        width: 100%;
-        margin: 0;
     }
 
     /* Contact Styling */
