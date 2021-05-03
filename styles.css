@@ -424,7 +424,8 @@ textarea {
     margin-bottom: 30px;
 }
 
-button:hover {
+button:hover,
+button:focus {
     background: #000;
     color: #FFF;
     cursor: pointer;
