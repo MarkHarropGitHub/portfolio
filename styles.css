@@ -42,7 +42,14 @@ h3 {
     text-align: center;
 }
 
-span {
+span,
+nav ul li a:hover,
+nav ul li a:focus,
+.arrow a,
+.skillLogo:hover,
+.link i:hover,
+.link i:focus,
+.homeHamburger:hover  {
     color: #FF5552;
 }
 
@@ -53,7 +60,13 @@ nav ul li,
 nav ul li a,
 footer,
 footer p,
-footer p a {
+footer p a,
+button,
+button:hover,
+button:focus,
+.arrow i:hover,
+.gitHub a,
+.homeHamburger  {
     color: #FFF;
 }
 
@@ -65,7 +78,6 @@ footer p a {
 
 button {
     background: #FF5552;
-    color: #FFF;
     padding: 5px 10px;
     font-size: 1rem;
     margin: 0 auto;
@@ -74,8 +86,12 @@ button {
 
 button:hover {
     background: #000;
-    color: #FFF;
     cursor: pointer;
+}
+
+.skills,
+.show {
+    background: #FFF;
 }
 
 /* -------------------- */
@@ -140,11 +156,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #FF5552;
-}
-
 .flex {
     display: flex;
     flex-direction: column;
@@ -185,9 +196,12 @@ h3 {
     margin: 0 auto;
 }
 
-.arrow p {
+.arrow a {
     font-size: 3rem;
-    color: #FFF;
+}
+
+.arrow a:hover {
+    color: #000;
 }
 
 /* ------------------- */
@@ -203,7 +217,8 @@ h3 {
     max-width: 800px;
     width: 75%;
     margin: 0 auto;
-    padding: 125px 0;
+    height: 80vh;
+    min-height: 600px;
 }
 
 .aboutImageContainer {
@@ -243,16 +258,19 @@ h3 {
     padding: 75px;
 }
 
+.innerWrapper {
+    width: 50%;
+}
+
 .skillHeader {
     text-align: center;
-    padding: 75px 0;
+    padding-top: 75px;
 }
 .skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    background: #FFF;
     max-width: 1080px;
     margin: 50px auto;
 }
@@ -260,9 +278,10 @@ h3 {
 .skillLogo {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     width: 200px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .skillLogo img {
@@ -318,7 +337,7 @@ h5 {
 }
 
 .imageContainer {
-    width: 40%;
+    width: 50%;
 }
 
 .imageContainer a {
@@ -331,8 +350,7 @@ h5 {
 }
 
 .textContainer {
-    width: 60%;
-
+    width: 50%;
 }
 
 .textContainer1,
@@ -346,19 +364,17 @@ h5 {
 
 .textContainer h4 {
     padding-bottom: 20px;
-    
 }
 
 .gitHub {
     font-size: 1rem;
-    background: #FF5552;
+    
     border: none;
     margin-top: 20px;
 }
 
 .gitHub a {
     text-decoration: none;
-    color: #FFF;
 }
 
 /* ------------------- */
@@ -389,12 +405,12 @@ h5 {
     display: flex;
 }
 
-.contact li {
+.link {
     list-style: none;
     margin: 20px 40px 0 0;
 }
 
-.contact li a i {
+.link a i {
     color: #000;
 }
 
@@ -427,7 +443,6 @@ textarea {
 button:hover,
 button:focus {
     background: #000;
-    color: #FFF;
     cursor: pointer;
 }
 
@@ -449,7 +464,6 @@ footer p {
     text-transform: uppercase;
     width: 100%;
 }
-
 
 /* ------------- */
 /*               */
@@ -474,7 +488,6 @@ footer p {
         background: none;
         border: none;
         margin: 0;
-        color: #FFF;
         font-size: 1.4rem;
         justify-content: center;
     }
@@ -482,10 +495,6 @@ footer p {
     .homeHamburger:hover,
     .homeHamburger:focus {
         cursor: pointer
-    }
-
-    .homeHamburger:hover {
-        color: #FF5552;
     }
 
     .homeNavUl {
@@ -496,7 +505,6 @@ footer p {
         display: block;
         text-align: center;
         position: absolute;
-        background: #FFF;
         padding: 20px 0;
         right: 40px;
         top: 100px;
