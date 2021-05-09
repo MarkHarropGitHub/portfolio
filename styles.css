@@ -49,7 +49,7 @@ nav ul li a:focus,
 .skillLogo:hover,
 .link i:hover,
 .link i:focus,
-.homeHamburger:hover  {
+.homeHamburger i:hover  {
     color: #FF5552;
 }
 
@@ -265,6 +265,7 @@ h3 {
 .skillHeader {
     text-align: center;
     padding-top: 75px;
+    margin-bottom: 50px;
 }
 .skills {
     display: flex;
@@ -494,7 +495,8 @@ footer p {
 
     .homeHamburger:hover,
     .homeHamburger:focus {
-        cursor: pointer
+        color: #FF5552;
+        cursor: pointer;
     }
 
     .homeNavUl {
@@ -514,6 +516,7 @@ footer p {
     .show li {
         font-size: 1rem;
         padding: 5px 0;
+        color: #FF5552;
     }
 
     .show li a {
@@ -523,6 +526,7 @@ footer p {
 
     .show li a:hover {
         opacity: 0.6;
+        
     }
 
     /* About Media Styling */
@@ -531,6 +535,8 @@ footer p {
         flex-direction: column;
         text-align: center;
         width: 100%;
+        height: 100%;
+        margin-top: 300px;
     }
 
     .aboutImageContainer {
@@ -539,10 +545,12 @@ footer p {
         width: 100%;
         align-self: center;
         margin-bottom: 50px;
+        padding-top: 200px;
     }
     
     .aboutTextContainer {
         margin-left: 0;
+        padding-bottom: 75px;
     }
 
     /* Skills Media Styling */
